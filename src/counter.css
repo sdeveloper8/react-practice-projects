@@ -1,0 +1,26 @@
+  #main-center-text {
+      background-color: black;
+      height: 80vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+     
+    }
+    h2 {
+      color:white;
+      font-family:  "Sans-Serif";
+      font-size: 8vw;
+      font-weight: 600;
+      
+    }
+    .cursur{
+      background-color:white;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      position: absolute;
+      mix-blend-mode: difference;
+    }
+  

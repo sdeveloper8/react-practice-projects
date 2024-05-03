@@ -1,0 +1,187 @@
+*,
+*::after,
+*::before {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Lucida Sans", sans-serif;
+}
+h1{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.menulist{
+  color: brown;
+}
+/* displayng cards */
+.parent-container{
+  position: relative;
+}
+.main-card-container {
+  background-color:#c02561;
+  padding: 2rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 500px)); 
+  /* grid-template-columns: repeat(3, auto);  */
+  grid-gap: 40px;
+  justify-content: space-around;
+  
+
+}
+/* img{
+  max-width: 100%;
+  height: auto;
+} */
+ .card-container {
+  background-color: rgb(249, 248, 249);
+  /* margin: 10px auto 0; */
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+  align-items:flex-start;
+  border-radius: 0rem 1rem 1rem 1rem;
+  
+} 
+.card-container  img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+   border-radius: 0 1rem 0 0;
+   /* transition: 1s ease-out; */
+   opacity: 70%;
+}
+.card-container img:hover{
+  opacity: 100%;
+  transition: 1s ease-out;
+}
+.card-container h5{
+  margin-top: .5rem;
+  position: absolute;
+  z-index: 2;
+  padding: .4rem .6rem;
+  letter-spacing: .2rem;
+  background-color: #f1f1f1;
+  /* top-left top-right bottom-right bottom-left */
+  border-radius: 0rem .8rem .8rem 0rem;
+ /*  min-height: 2rem; */
+ color: #c02561;
+}
+.card-container p{
+  padding: .5rem 0rem;
+}
+.card-container h4{
+  color: #c02561;
+}
+.card-details{
+  padding: .7rem 1rem;
+
+  
+}
+.card-details h2{
+  justify-content: center;
+  color: #c02561;
+}
+/*998*/
+@media (max-width: 998px) {
+  .main-card-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 500px));
+    grid-gap: 30px;
+    justify-content: space-around;
+  }
+}
+div.category-button{
+position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #c02561;
+  opacity: 90%;
+  z-index: 100;
+ 
+}
+div.category-button button{
+color: #c02561;
+border-color: #c02561;
+
+}
+@media print {
+  h2{color:  red;}
+}
+
+/* end cards here */
+.person-record{
+  background-color: blueviolet;
+  height: 10rem;
+  width: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  margin: 2rem;
+
+}
+/*Form Complex CSS*/
+form > label{
+  margin-right: 1rem;
+  color: blue;
+  margin-bottom: 1rem;
+}
+form > input, form>div.formElements> input{
+  height: 2rem;
+  width: auto;
+  margin-right: 1rem;
+  padding: 1rem .5rem;
+  border-radius: .5rem;
+  border: #2d45cc .2rem solid;
+  margin-bottom: 1rem;
+}
+form > input:hover{
+border: #2dcccc .2rem solid;
+}
+.formElements{
+  /*background-color: rgb(237, 147, 37);*/
+  width:80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(30%, 70%));
+  grid-gap:1rem;
+  align-content: center;
+  justify-content: center;
+}
+button{
+  height: 3rem;
+  width:10rem ;
+  padding: .5rem .5rem;
+  margin: 1rem 1rem;
+  font-weight: 700;
+  font-size: medium;
+  color: #fbfcfc;
+
+  border-radius: .7rem;
+  
+}
+.listNumbers{
+  display: flex;
+  flex-direction: row;
+  background-color: #2d45cc;
+  justify-content: center;
+}
+.listNumbers > div {
+  background-color: #f1f1f1;
+  width: 70px;
+  margin: 5px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 25px;
+  
+
+}
+.listNumbers > div > a{
+  text-decoration: none;
+}
